@@ -1,66 +1,40 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import type { Metadata } from "next";
+import OfferingsSection from "@/components/home/OfferingsSection";
+import AboutIntroSection from "@/components/home/AboutIntroSection";
+import HeroSlider from "@/components/home/HeroSlider";
+import StatsSection from "@/components/home/StatsSection";
+import PartnersSection from "@/components/home/PartnersSection";
+import ServicesSection from "@/components/home/ServicesSection";
+import CaseStudiesSection from "@/components/home/CaseStudiesSection";
+import ClientLogosSection from "@/components/home/ClientLogosSection";
+import NewsBlogsSection from "@/components/home/NewsBlogsSection";
+import TestimonialsSection from "@/components/home/TestimonialsSection";
+import ContactStrip from "@/components/home/ContactStrip";
+import { buildPageMetadata } from "@/lib/metadata";
+import { siteConfig } from "@/content/site";
 
-export default function Home() {
+export const metadata: Metadata = buildPageMetadata({
+  title: `${siteConfig.name} – ${siteConfig.tagline}`,
+  description:
+    "Our network breaches global borders, with hundreds of dedicated personnel working at the forefront of the latest emergent technologies.",
+  canonical: "/",
+});
+
+export default function HomePage() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.tsx file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+    <>
+      <h1 className="sr-only">{siteConfig.name} – {siteConfig.tagline}</h1>
+      <HeroSlider />
+      <OfferingsSection />
+      <AboutIntroSection />
+      <StatsSection />
+      <PartnersSection />
+      <ServicesSection />
+      <CaseStudiesSection />
+      <ClientLogosSection />
+      <NewsBlogsSection />
+      <TestimonialsSection />
+      <ContactStrip />
+    </>
   );
 }

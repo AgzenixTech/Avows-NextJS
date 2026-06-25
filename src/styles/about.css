@@ -1,0 +1,531 @@
+@import "./tokens.css";
+
+/* ── Our Journey title (white section above hero) ── */
+.about-hero-journey {
+  padding: 50px 0 0;
+  background: var(--color-white);
+}
+
+.about-hero-journey__title {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 60px;
+  color: var(--color-navy);
+}
+
+/* ── Hero banner ── */
+.about-hero-banner {
+  position: relative;
+  padding: 130px 0 160px;
+  background-image: url("/assets/images/2023/11/About-us.png");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.about-hero-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #020202;
+  opacity: 0.702;
+}
+
+.about-hero-banner .container {
+  position: relative;
+  z-index: 1;
+}
+
+.about-hero__title {
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 70px;
+  color: var(--color-white);
+  margin-bottom: 0;
+}
+
+.about-hero__intro {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+  color: var(--color-white);
+}
+
+/* ── From The CEO ── */
+.about-hero-ceo {
+  padding: 50px 0 70px;
+  background: var(--color-white);
+}
+
+.about-hero__ceo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.about-hero__image-wrap {
+  position: relative;
+  max-width: 500px;
+}
+
+.about-hero__image-decor {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 420px;
+  height: 420px;
+  transform: translate(-50%, -50%);
+  border: 2px dashed rgba(13, 34, 53, 0.15);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.about-hero__image-decor::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 320px;
+  height: 320px;
+  transform: translate(-50%, -50%);
+  border: 2px dashed rgba(13, 34, 53, 0.1);
+  border-radius: 50%;
+}
+
+.about-hero__image {
+  position: relative;
+  z-index: 1;
+  width: 80%;
+  max-width: 400px;
+  height: auto;
+  margin-inline: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  filter: brightness(0.64);
+  display: block;
+}
+
+.about-hero__ceo-copy {
+  text-align: start;
+}
+
+.about-hero__ceo-label {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 60px;
+  color: var(--color-navy);
+  margin-bottom: 0;
+}
+
+.about-hero__quote {
+  margin: 25px 0 0;
+  padding: 0;
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #5f7586;
+}
+
+/* ── Journey timeline tabs ── */
+.about-journey {
+  padding: 0 0 70px;
+  background: var(--color-white);
+}
+
+.about-journey__tabs-wrap {
+  margin-bottom: 22px;
+  overflow-x: auto;
+  padding-bottom: 14px;
+}
+
+.about-journey__tabs {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 8px;
+  min-width: max-content;
+}
+
+.about-journey__tab {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  flex: 1 0 auto;
+  min-width: 72px;
+  padding: 15px 10px;
+  border: 2px solid var(--color-primary);
+  border-radius: 5px;
+  background: var(--color-white);
+  cursor: pointer;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--color-black);
+  text-align: center;
+  transition: background 0.2s, color 0.2s;
+}
+
+.about-journey__tab-icon {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  background: #888;
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23fff' d='M3 17h2v-4H3v4zm0 6h2v-2H3v2zM3 9h2V5H3v4zm4 12h2v-6H7v6zm0-8h2V5H7v8zm4 8h2v-10h-2v10zm0-12h2V3h-2v6zm4 12h2v-14h-2v14zm0-16h2V1h-2v4z'/%3E%3C/svg%3E");
+  mask-size: contain;
+  mask-repeat: no-repeat;
+}
+
+.about-journey__tab.is-active {
+  background: var(--color-primary);
+  color: var(--color-white);
+  border-width: 1px;
+  border-color: transparent;
+}
+
+.about-journey__tab.is-active .about-journey__tab-icon {
+  background: var(--color-white);
+}
+
+.about-journey__tab.is-active::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -13px;
+  transform: translateX(-50%);
+  width: 24px;
+  height: 24px;
+  background-image: linear-gradient(135deg, transparent 50%, var(--color-primary) 50%);
+  pointer-events: none;
+}
+
+.about-journey__panel {
+  margin-top: 8px;
+}
+
+.about-journey__panel-inner {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 32px;
+  align-items: start;
+  padding: 20px 30px;
+  border: 1px solid var(--color-primary);
+  border-radius: 5px;
+  box-shadow: -1px 7px 15px rgba(0, 0, 0, 0.07);
+  color: #101010;
+}
+
+.about-journey__panel-inner img {
+  width: 170px;
+  height: auto;
+}
+
+.about-journey__panel-inner ul {
+  list-style: disc;
+  padding-left: 20px;
+  line-height: 1.75;
+}
+
+@media (min-width: 1024px) {
+  .about-journey__tabs {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .about-journey__tab {
+    flex: 1;
+    min-width: 0;
+  }
+}
+
+/* ── Objectives / Mission / Vision ── */
+.about-objectives {
+  padding: 79px 0 80px;
+  background: var(--color-white);
+}
+
+.about-objectives__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.about-objectives__block {
+  margin-bottom: 32px;
+}
+
+.about-objectives__block h2 {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 32px;
+  color: var(--color-navy);
+  margin-bottom: 12px;
+}
+
+.about-objectives__block p {
+  font-size: 15px;
+  line-height: 28px;
+  letter-spacing: -0.05px;
+  color: #5f7586;
+}
+
+.about-objectives__split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.about-objectives__images {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.about-objectives__decor {
+  position: absolute;
+  inset: 8% 0 8% 18%;
+  border: 1px dashed rgba(255, 255, 255, 0.4);
+  border-radius: 100%;
+  pointer-events: none;
+}
+
+.about-objectives__decor::before {
+  content: "";
+  position: absolute;
+  inset: 12%;
+  border: 1px dashed rgba(255, 255, 255, 0.35);
+  border-radius: 100%;
+}
+
+.about-objectives__image-main,
+.about-objectives__image-row img {
+  border-radius: 5px;
+}
+
+.about-objectives__image-main {
+  width: 100%;
+  height: auto;
+}
+
+.about-objectives__image-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.about-objectives__image-row img {
+  width: 100%;
+  height: auto;
+}
+
+/* ── Core Values ── */
+.about-values {
+  padding: 70px 0;
+  background: var(--color-white);
+}
+
+.about-values__heading {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 60px;
+  color: var(--color-navy);
+  margin-bottom: 40px;
+}
+
+.about-values__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.value-card {
+  text-align: center;
+  margin: 0 1em 2em;
+  padding: 51px 15px 30px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  background: var(--color-white);
+}
+
+.value-card__icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 172px;
+  max-width: 100%;
+  margin: 0 auto 24px;
+  padding: 48px 0 50px;
+  background: var(--color-stat-icon-bg);
+  border-radius: 100%;
+}
+
+.value-card__icon {
+  width: 64px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.value-card__title {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-navy);
+  margin-bottom: 16px;
+}
+
+.value-card__text {
+  font-size: 16px;
+  line-height: 28px;
+  color: #5f7586;
+  font-weight: 400;
+}
+
+/* ── Leadership ── */
+.about-leadership {
+  padding: 70px 0 118px;
+  background: var(--color-white);
+}
+
+.about-leadership__group {
+  margin-bottom: 48px;
+}
+
+.about-leadership__group:last-child {
+  margin-bottom: 0;
+}
+
+.about-leadership__heading {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 60px;
+  color: var(--color-navy);
+  margin-bottom: 40px;
+}
+
+.about-leadership__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-leadership__grid--leadership {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 900px;
+}
+
+.leader-card__inner {
+  padding: 31px 30px 38px;
+  background: var(--color-testimonial-bg);
+  border-radius: 5px;
+  text-align: center;
+}
+
+.leader-card__photo {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  border-radius: 100%;
+  margin: 0 auto 16px;
+  display: block;
+  object-fit: cover;
+  aspect-ratio: 1;
+}
+
+.leader-card__name {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-navy);
+  margin-bottom: 4px;
+}
+
+.leader-card__role {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-primary);
+  line-height: 1.5;
+}
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+  .about-hero-journey__title,
+  .about-values__heading,
+  .about-leadership__heading {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  .about-hero__title {
+    font-size: 42px;
+    line-height: 56px;
+  }
+
+  .about-hero__ceo-label {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  .about-hero__ceo-grid,
+  .about-objectives__grid,
+  .about-leadership__grid,
+  .about-leadership__grid--leadership,
+  .about-values__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-hero-banner {
+    padding: 80px 0 100px;
+  }
+
+  .about-hero-journey__title,
+  .about-values__heading,
+  .about-leadership__heading {
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .about-hero__title {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  .about-hero__intro {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .about-hero__ceo-grid,
+  .about-objectives__grid,
+  .about-objectives__split,
+  .about-leadership__grid,
+  .about-leadership__grid--leadership,
+  .about-values__grid,
+  .about-journey__panel-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .about-journey__panel-inner {
+    gap: 16px;
+  }
+
+  .value-card {
+    margin: 0 0 1.5em;
+  }
+}

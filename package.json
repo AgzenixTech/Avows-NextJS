@@ -1,5 +1,5 @@
 {
-  "name": "avows-nextjs-scaffold",
+  "name": "avows-nextjs",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,12 +9,16 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@aws-sdk/client-sesv2": "^3.1075.0",
     "next": "16.2.9",
+    "pg": "^8.22.0",
     "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react-dom": "19.2.4",
+    "swiper": "^12.2.0"
   },
   "devDependencies": {
     "@types/node": "^20",
+    "@types/pg": "^8.20.0",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",

@@ -1,0 +1,39 @@
+:root {
+  --color-primary: #bd1129;
+  --color-section-title: var(--color-primary);
+  --color-primary-dark: #b20a0a;
+  --color-primary-hover: #f0596e;
+  --color-navy: #0d2235;
+  --color-navy-light: #1a3a52;
+  --color-footer: #350d0d;
+  --color-footer-bottom: #250005;
+  --color-banner-overlay: #290006;
+  --color-stats-bg: #f3f8ff;
+  --color-stat-card-bg: #e9f2fe;
+  --color-stat-icon-bg: #eef4fb;
+  --color-contact-bg: #1d2020;
+  --color-contact-form-bg: #f4f8fb;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-text: #333333;
+  --color-text-muted: #666666;
+  --color-border: #e5e5e5;
+  --color-testimonial-bg: #f5f9ff;
+  --color-overlay: rgba(0, 0, 0, 0.6);
+
+  --font-family: var(--font-poppins), "Poppins", sans-serif;
+
+  --container-max: 1140px;
+  --container-padding: 20px;
+  --section-padding-y: 80px;
+  --section-padding-y-sm: 48px;
+
+  --header-height: 80px;
+  --radius-pill: 30px;
+  --radius-button: 0;
+  --radius-card: 8px;
+
+  --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.08);
+  --transition-fast: 0.2s ease;
+  --transition-medium: 0.3s ease;
+}

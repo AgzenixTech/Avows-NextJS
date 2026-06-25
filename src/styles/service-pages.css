@@ -1,0 +1,341 @@
+.page-hero--service .page-hero__title {
+  font-size: 52px;
+  line-height: 70px;
+}
+
+.service-content {
+  padding: 120px 0 60px;
+}
+
+.service-content .container {
+  max-width: 1170px;
+}
+
+.service-content__grid--multi-image {
+  grid-template-columns: minmax(0, 60%) minmax(0, 40%);
+  gap: 0;
+  align-items: start;
+}
+
+.service-content__media {
+  margin-right: 31px;
+}
+
+.service-content__text {
+  margin-left: 37px;
+}
+
+.service-content__main-image {
+  max-width: 670px;
+  border-radius: 5px;
+}
+
+.service-content__sub-images {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-top: -150px;
+}
+
+.service-content__sub-images img {
+  height: auto;
+  border-radius: 5px;
+}
+
+.service-content__sub-images img:first-child {
+  width: 42%;
+  max-width: 280px;
+}
+
+.service-content__sub-images img:last-child {
+  width: 55%;
+  max-width: 360px;
+}
+
+.service-block + .service-block {
+  margin-top: 28px;
+}
+
+.service-block__headline {
+  margin-bottom: 12px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 45px;
+  color: var(--color-navy);
+}
+
+.service-block__subtitle {
+  margin-bottom: 10px;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.35;
+  color: var(--color-navy);
+}
+
+.service-block__body {
+  margin-bottom: 0;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.06px;
+  color: #5f7586;
+}
+
+.service-case-studies {
+  padding: 0 0 40px;
+}
+
+.service-case-studies__title {
+  margin-bottom: 24px;
+  margin-left: 20px;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.35;
+  text-align: left;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  color: var(--color-primary);
+}
+
+.service-case-studies__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 300px));
+  justify-content: start;
+  gap: 30px;
+}
+
+.service-case-studies__card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0 0 24px;
+  background: var(--color-testimonial-bg);
+  border-radius: 0;
+}
+
+.service-case-studies__card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.service-case-studies__card-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 20px 20px 0;
+}
+
+.service-case-studies__card h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-black);
+}
+
+.service-case-studies__card h3 a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.service-case-studies__card h3 a:hover {
+  color: var(--color-primary);
+}
+
+.service-case-studies__excerpt {
+  margin-bottom: 16px;
+  flex: 1;
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.service-case-studies__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
+  padding: 12px 28px;
+  border-radius: 100px;
+  background: var(--color-primary);
+  color: var(--color-white);
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background var(--transition-fast), color var(--transition-fast);
+}
+
+.service-case-studies__btn:hover {
+  background: var(--color-white);
+  color: #4b0909;
+}
+
+.service-stats {
+  padding: 29px 0 15px;
+  background: var(--color-stats-bg);
+}
+
+.service-stats .container {
+  max-width: 1190px;
+}
+
+.service-stats__row--primary {
+  margin-bottom: 0;
+}
+
+.service-stat {
+  padding: 35px 20px 32px;
+  border-radius: 5px;
+  background: var(--color-stat-card-bg);
+}
+
+.service-stat--featured {
+  background: var(--color-primary);
+}
+
+.service-stat--featured .service-stat__label,
+.service-stat--featured .service-stat__value {
+  color: var(--color-white);
+}
+
+.service-stat--large .service-stat__icon {
+  width: 20%;
+  max-width: 88px;
+  height: auto;
+  margin: 0 auto 12px;
+}
+
+.service-stat__label {
+  margin-bottom: 8px;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--color-primary);
+}
+
+.service-stat__value {
+  display: block;
+  font-size: 65px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--color-navy);
+}
+
+.page-cta {
+  padding: 83px 0 78px;
+  background: transparent;
+  text-align: center;
+}
+
+.page-cta__bg {
+  background-position: top center;
+  background-size: cover;
+  opacity: 1;
+}
+
+.page-cta__overlay {
+  position: absolute;
+  inset: 0;
+  background: var(--color-navy);
+  opacity: 0.749;
+  pointer-events: none;
+}
+
+.page-cta__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 900px;
+  margin-inline: auto;
+}
+
+.page-cta__lead {
+  margin-bottom: 8px;
+  font-size: 30px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 42px;
+  letter-spacing: -0.4px;
+  color: var(--color-white);
+}
+
+.page-cta__heading {
+  margin-bottom: 32px;
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 57px;
+  color: var(--color-white);
+}
+
+.btn--service-cta {
+  border-radius: 3px;
+  font-size: 15px;
+  font-weight: 500;
+  gap: 10px;
+}
+
+@media (max-width: 1024px) {
+  .service-content {
+    padding: 70px 0 0;
+  }
+
+  .service-content__grid--multi-image {
+    grid-template-columns: 1fr;
+  }
+
+  .service-content__media,
+  .service-content__text {
+    margin: 0;
+  }
+
+  .service-content__sub-images {
+    flex-direction: column;
+    align-items: stretch;
+    margin-top: 16px;
+  }
+
+  .service-content__sub-images img:first-child,
+  .service-content__sub-images img:last-child {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 16px;
+  }
+
+  .service-case-studies__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 767px) {
+  .page-hero--service {
+    padding: 80px 0;
+  }
+
+  .page-hero--service .page-hero__title {
+    font-size: 32px;
+    line-height: 1.5;
+  }
+
+  .service-block__headline {
+    font-size: 35px;
+    line-height: 39px;
+  }
+
+  .service-case-studies__grid,
+  .service-stats__row--primary {
+    grid-template-columns: 1fr;
+  }
+
+  .page-cta__heading {
+    font-size: 33px;
+    line-height: 1.3;
+    letter-spacing: 1px;
+  }
+
+  .page-cta__lead {
+    font-size: 24px;
+    line-height: 1.4;
+  }
+}
