@@ -1,4 +1,5 @@
 @import "./tokens.css";
+@import "./typography.css";
 
 /* ── Our Journey title (white section above hero) ── */
 .about-hero-journey {
@@ -405,6 +406,7 @@
 
 .about-leadership__group {
   margin-bottom: 48px;
+  text-align: center;
 }
 
 .about-leadership__group:last-child {
@@ -412,6 +414,7 @@
 }
 
 .about-leadership__heading {
+  width: 100%;
   text-align: center;
   font-size: 45px;
   font-weight: 700;
@@ -439,6 +442,10 @@
   padding: 31px 30px 38px;
   background: var(--color-testimonial-bg);
   border-radius: 5px;
+  text-align: center;
+}
+
+.leader-card__inner :is(h3, p) {
   text-align: center;
 }
 
@@ -489,9 +496,13 @@
   .about-hero__ceo-grid,
   .about-objectives__grid,
   .about-leadership__grid,
-  .about-leadership__grid--leadership,
   .about-values__grid {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .about-leadership__grid--leadership {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 400px));
+    justify-content: center;
   }
 }
 
@@ -521,10 +532,14 @@
   .about-objectives__grid,
   .about-objectives__split,
   .about-leadership__grid,
-  .about-leadership__grid--leadership,
   .about-values__grid,
   .about-journey__panel-inner {
     grid-template-columns: 1fr;
+  }
+
+  .about-leadership__grid--leadership {
+    max-width: 400px;
+    margin-inline: auto;
   }
 
   .about-journey__panel-inner {

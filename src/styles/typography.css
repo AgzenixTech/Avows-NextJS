@@ -1,0 +1,45 @@
+/**
+ * Sitewide body copy alignment — justified paragraphs only.
+ * Headings, titles, subtitles, and hero slider copy are unchanged.
+ */
+:is(
+  p,
+  blockquote,
+  [class$="__text"],
+  [class$="__intro"],
+  [class$="__paragraph"],
+  [class$="__description"],
+  [class$="__quote"],
+  [class$="__lead"],
+  [class$="__panel-text"],
+  p[class$="__body"]
+):not([class*="__title"]):not([class*="__subtitle"]):not([class*="site-hero__"]):not([class*="leader-card__"]):not([class$="__heading"]) {
+  text-align: justify;
+}
+
+.career-job-accordion__panel,
+.article-content__list,
+.career-testimonial-card p,
+.testimonial-card__quote p {
+  text-align: justify;
+}
+
+/* Homepage hero slider — left-aligned copy (not justified) */
+.site-hero .site-hero__content :is(p, h2, a) {
+  text-align: left;
+}
+
+/* Centered cards and profile blocks — not justified body copy */
+.leader-card__inner :is(h3, p),
+.value-card :is(h3, p),
+.stat-card__label {
+  text-align: center;
+}
+
+/* Subtitle / banner lines — not body paragraphs */
+.bg-banner-section__lead,
+.bg-banner-section__subtitle,
+.agentic-cta__lead,
+.career-testimonials__panel-subtitle {
+  text-align: center;
+}

@@ -1,3 +1,5 @@
+@import "./typography.css";
+
 .page-hero--agentic .page-hero__title {
   max-width: 900px;
   margin-inline: auto;

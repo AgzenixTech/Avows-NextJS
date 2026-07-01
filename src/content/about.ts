@@ -166,12 +166,12 @@ export const leadershipTeams = {
   management: [
     {
       name: "KRISHNA CHAITANYA BOGA",
-      role: "Global Head- Sales, Solution Services",
+      role: "Director - Solution Sales, APAC",
       image: "/assets/images/7-11.png",
     },
     {
       name: "ENDAH SUSANTI",
-      role: "Global Head- Sales, Professional Services",
+      role: "Country Head- Sales, Professional Services",
       image: "/assets/images/6-10.png",
     },
     {

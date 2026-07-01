@@ -2,6 +2,7 @@ import CareerApplyFormSection from "@/components/career/CareerApplyFormSection";
 import CareerDreamsSection from "@/components/career/CareerDreamsSection";
 import CareerHeroSection from "@/components/career/CareerHeroSection";
 import CareerIntroSection from "@/components/career/CareerIntroSection";
+import CareerJobsSection from "@/components/career/CareerJobsSection";
 import CareerOpportunitiesSection from "@/components/career/CareerOpportunitiesSection";
 import CareerTestimonialsSection from "@/components/career/CareerTestimonialsSection";
 import CareerValuesSection from "@/components/career/CareerValuesSection";
@@ -20,6 +21,7 @@ export default function CareerPage() {
       <CareerHeroSection />
       <CareerValuesSection />
       <CareerIntroSection />
+      <CareerJobsSection />
       <CareerDreamsSection />
       <CareerTestimonialsSection />
       <CareerOpportunitiesSection />

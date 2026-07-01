@@ -22,7 +22,7 @@ export default function AboutHeroSection() {
         <Container>
           <div className="about-hero__ceo-grid">
             <div className="about-hero__image-wrap">
-              <span className="about-hero__image-decor" aria-hidden="true" />
+              
               <Image
                 src={aboutHero.ceoImage}
                 alt="AVOWS CEO"

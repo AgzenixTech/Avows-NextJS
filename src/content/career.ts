@@ -76,30 +76,6 @@ export const careerJobsSection = {
     "Explore exciting opportunities at AVOWS. We're looking for dynamic individuals to join us in various roles. Apply today!",
 } as const;
 
-export const careerJobs = [
-  { title: "Senior Business Analyst", location: "Kuala Lumpur, Malaysia", type: "Full Time", updated: "Updated 2 days ago" },
-  { title: "Informatica Developer", location: "Kuala Lumpur, Malaysia", type: "Full Time", updated: "Updated 2 days ago" },
-  { title: "System Analyst", location: "Kuala Lumpur, Malaysia", type: "Full Time", updated: "Updated 2 days ago" },
-  { title: "Functional Solution Analyst", location: "Kuala Lumpur, Malaysia", type: "Full Time", updated: "Updated 2 days ago" },
-  { title: "IT Project Manager", location: "Kuala Lumpur, Malaysia", type: "Full Time", updated: "Updated 2 days ago" },
-  { title: "Network Service Delivery Manager", location: "Kuala Lumpur, Malaysia", type: "Full Time", updated: "Updated 2 days ago" },
-  { title: "Network Security Specialist", location: "Kuala Lumpur, Malaysia", type: "Full Time", updated: "Updated 2 days ago" },
-  { title: "Frontend Developer", location: "Kuala Lumpur, Malaysia", type: "Full Time", updated: "Updated 2 days ago" },
-  { title: "SoftwareDeveloper", location: "Kuala Lumpur, Malaysia", type: "Full Time", updated: "Updated 2 days ago" },
-  { title: "Lead –Mobile", location: "Kuala Lumpur, Malaysia", type: "Full Time", updated: "Updated 2 days ago" },
-  { title: "Tech Lead –API", location: "Kuala Lumpur, Malaysia", type: "Full Time", updated: "Updated 2 days ago" },
-  { title: "Android Engineer", location: "Kuala Lumpur, Malaysia", type: "Full Time", updated: "Updated 2 days ago" },
-  { title: "SAP BASIS", location: "Kuala Lumpur, Malaysia", type: "Full Time", updated: "Updated 2 days ago" },
-  { title: "EOS Microsoft", location: "Kuala Lumpur, Malaysia", type: "Full Time", updated: "Updated 2 days ago" },
-  { title: "Scrum Master", location: "Kuala Lumpur, Malaysia", type: "Full Time", updated: "Updated 2 days ago" },
-  { title: "Solution Analyst", location: "Kuala Lumpur, Malaysia", type: "Full Time", updated: "Updated 2 days ago" },
-  { title: "Backend Developer", location: "Kuala Lumpur, Malaysia", type: "Full Time", updated: "Updated 2 days ago" },
-  { title: "FrontendDeveloper", location: "Kuala Lumpur, Malaysia", type: "Full Time", updated: "Updated 2 days ago" },
-  { title: "Oracle Hadoop ETL Developer 2", location: "Kuala Lumpur, Malaysia", type: "Full Time", updated: "Updated 2 days ago" },
-  { title: "IT Project Manager 2", location: "Kuala Lumpur, Malaysia", type: "Full Time", updated: "Updated 2 days ago" },
-  { title: "Senior Software Developer 2", location: "Kuala Lumpur, Malaysia", type: "Full Time", updated: "Updated 2 days ago" },
-] as const;
-
 export const careerDreams = {
   title: "Making Dreams And Aspirations Come True",
   text: "At Avows, we believe in transforming career aspirations into reality. Join our diverse team and unlock opportunities to realize your professional dreams.",
