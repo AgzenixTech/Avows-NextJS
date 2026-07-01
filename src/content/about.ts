@@ -10,7 +10,7 @@ export const aboutHero = {
   intro:
     "At Avows, our global network transcends borders, backed by a dedicated workforce at the helm of cutting-edge technologies. Millions worldwide have experienced the Avows difference. Committed to delivering more, we focus on benefiting our customers, associates, and communities across the globe. Fueled by new challenges, we consistently go the extra mile, offering genuine value. Our aim? A better world for all, achieved together.",
   bannerImage: "/assets/images/2023/11/About-us.png",
-  ceoImage: "/assets/images/our_ceo-c140a4da16c8f9a45bb5dcb6731bd410-5.jpg",
+  ceoImage: "/assets/images/our_ceo_2026_enhanced.jpeg",
   ceoLabel: "From The CEO",
   ceoQuote:
     "Established in 2008, Avows thrives on a commitment to excellence that fuels innovation at our core. Our diverse clientele ranges from dynamic startups to steadfast Fortune 500 companies. With unmatched industry expertise in digital IT services and solutions, we empower clients to drive innovation, increase revenue, navigate risks, cut costs, and fortify controls—all while maintaining unwavering flexibility.",
@@ -160,19 +160,19 @@ export const coreValues = [
 
 export const leadershipTeams = {
   leadership: [
-    { name: "PH CHEW", role: "Director, Avows Group", image: "/assets/images/1-17.png" },
+    //{ name: "PH CHEW", role: "Director, Avows Group", image: "/assets/images/1-17.png" },
     { name: "ASHOK K RAMAVATH", role: "Group CEO", image: "/assets/images/3-16.png" },
   ],
   management: [
     {
-      name: "ENDAH SUSANTI",
-      role: "Global Head- Sales, Professional Services",
-      image: "/assets/images/6-10.png",
-    },
-    {
       name: "KRISHNA CHAITANYA BOGA",
       role: "Global Head- Sales, Solution Services",
       image: "/assets/images/7-11.png",
+    },
+    {
+      name: "ENDAH SUSANTI",
+      role: "Global Head- Sales, Professional Services",
+      image: "/assets/images/6-10.png",
     },
     {
       name: "RAKESH K MUDAVATH",
